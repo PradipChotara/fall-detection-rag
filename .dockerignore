@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+
+# Environment & credentials
+.env
+
+# OS files
+.DS_Store
+
+# Editors & tools
+.vscode/
+.idea/
+*.swp
+
+# Git
+.git
+.gitignore
+
+# Notebooks & cache
+*.ipynb
+*.ipynb_checkpoints
+.pytest_cache/
+.mypy_cache/
+
+# Logs, temp, backup
+*.log
+*.tmp
+*.bak
+
+# Frontend (ignore)
+frontend/
+downloaded_docs/

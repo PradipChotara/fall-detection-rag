@@ -1,0 +1,12 @@
+# Ignore environment and cache files
+.env
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Ignore logs
+*.log
+
+# Ignore downloaded documents and uploads
+downloaded_docs/uploads/
