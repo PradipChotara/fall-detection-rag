@@ -1,0 +1,23 @@
+BACKEND:
+-------------------------
+cd ~/fall-detection-rag
+source env/bin/activate
+nohup python subscriber.py > /dev/null 2>&1 &
+nohup uvicorn app:app --host 0.0.0.0 --port 8000 > /dev/null 2>&1 &
+-------------------------
+to see of both(subscriber.py & app.py) the process are running or not:
+ps aux | grep subscriber.py
+ps aux | grep uvicorn
+-------------------------
+-------------------------
+
+FRONTEND :
+-------------------------
+cd ~/frontend
+nohup python3 -m http.server 8080 --bind 0.0.0.0 > /dev/null 2>&1 &
+-------------------------
+to see frontend server proccess is running or not:
+ps aux | grep "http.server"
+-------------------------
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
