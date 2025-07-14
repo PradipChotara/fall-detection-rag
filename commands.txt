@@ -1,3 +1,10 @@
+venv/scripts/activate
+uvicorn app:app --reload
+
+python subscriber.py
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 BACKEND:
 -------------------------
 cd ~/fall-detection-rag
